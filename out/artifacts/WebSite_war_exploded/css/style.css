@@ -1,0 +1,222 @@
+body{
+    margin:0;
+    padding:0;
+    /*滚动条*/
+    /*一页的高度是800，宽度在1400左右*/
+    height: 2600px;
+
+}
+
+
+#div1{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/wallhaven-r7v3d1.png");
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#header{
+    width: 100%;
+    height: 150px;
+
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 100px;
+    /*background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);*/
+
+}
+
+
+.header-left{
+    float: left;
+    width: 400px;
+    /*background-color: red;*/
+}
+.header-left span{
+    font-family:微软雅黑, sans-serif;
+    font-size: 60px;
+    display: block;
+    padding: 20px;
+
+}
+
+.header-center{
+    float: left;
+    width: 700px;
+    text-align: center;
+    word-spacing: 50px;
+    /*background-color: orange;*/
+}
+.header-center a{
+    text-decoration: none;
+    font-family: 微软雅黑, sans-serif;
+    color: black;
+    position: relative;
+    top: 30px;
+}
+.header-center a:hover{
+    color: white;
+}
+
+.header-right{
+    float: right;
+    width: 400px;
+    /*background-color: yellow;*/
+}
+.header-right img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: right;
+    object-fit: fill;
+    object-fit: contain;
+    object-fit: scale-down;
+    position: relative;
+    top: 20px;
+    right: 20px;
+
+}
+
+
+#content{
+    /*background-color: #FAACA8;*/
+    height: 650px;
+    width: 100%;
+
+}
+/*.content::before{
+    display: table;
+    content: '';
+}*/
+.content{
+    position: absolute;
+    left: 450px;
+    top: 300px;
+    color: white;
+
+}
+.title-t{
+    display: block;
+    font-size: 80px;
+}
+.introduce{
+    display: block;
+    font-size: 20px;
+}
+.button{
+    font-size: 25px;
+    margin-top: 100px;
+}
+.button div{
+    display: inline-block;
+    border: 2px white solid;
+    width: 150px;
+    border-radius: 50px;
+    margin-right: 350px;
+    line-height: 50px;
+}
+.button a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#div2{
+    width: 100%;
+    height: 800px;
+    /*background-color: #ff253a;*/
+}
+#div2::before{
+    display: table;
+    content: '';
+}
+#SecondContent{
+    height: 700px;
+    width: 1300px;
+    margin:auto;
+    /*background-color: black;*/
+}
+#SecondContent .left{
+    border-radius: 25px;
+    height: 600px;
+    width: 600px;
+    float: left;
+    margin-top: 75px;
+    background-color: orange;
+}
+#SecondContent .right{
+    float: right;
+    height: 700px;
+    width: 650px;
+    /*background-color: yellow;*/
+}
+.right .one{
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    border-radius: 25px;
+    margin: 50px 50px 50px 0;
+}
+.right .two{
+    float: right;
+    height: 300px;
+    width: 300px;
+    background-color: wheat;
+    border-radius: 25px;
+    margin: 50px 0 50px 0;
+}
+.right .three{
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    border-radius: 25px;
+}
+.right .four{
+    float: right;
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+    border-radius: 25px;
+}
+#div3{
+    width: 100%;
+    height: 800px;
+
+}
+#div3 *{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
