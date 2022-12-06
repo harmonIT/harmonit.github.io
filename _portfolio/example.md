@@ -1,6 +1,6 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: Example
+  title: 
   subtitle: subtitle
   thumbnail: https://place-hold.it/400x300
   
@@ -17,6 +17,6 @@ optional info list (delete if not using):
 
 {:.list-inline} 
 - Date: 
-- Client: 
+- Client: 第一次发布
 - Category: 
 
