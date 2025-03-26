@@ -1,0 +1,109 @@
+body{
+    height: 100vh;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0%;
+    height: 15%;
+    background-color: red;
+    z-index: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.content{
+    height: 2000px;
+    background:linear-gradient(to bottom, green,blue);
+    overflow-y: auto;
+    position: relative;
+    top:15%;
+    left:0%;
+    right:0%;
+    bottom:0%;
+    width: 100%;    
+}
+.flex1{
+    position: fixed;
+    top:3%;
+    left: 80%;
+    width: 20%;
+    height: 10%;
+    /* background-color:white; */
+}
+.right1{
+    display: flex;
+    flex-direction: row;/*水平排列*/
+    justify-content: space-around;/*项目周围空间相等*/ 
+}
+.left1{
+    position: fixed;
+    top: 1%;
+    left: 0%;
+    font-size: 30px;
+    /* background-color: yellow; */
+}
+.one{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    height: 10vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: white;
+}
+.two{
+    position: absolute;
+    top: 9%;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    height: 10vh;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    /* background-color: yellow; */
+
+    opacity: 0;
+    transform: translateY(40px);
+
+}
+.two.fade-in{
+    opacity:1;
+    transform:translateY(0);/*变换方向*/
+    transition-property: all;/*变化方式*/
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.two.fade-out{
+    opacity:0;
+    transform:translateY(-20px);
+    transition-property: all;/*变化方式*/
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* .sidebar{
+    position: fixed;
+    left: 0;
+    top:0;
+    bottom:0%;
+    width: 15%;
+    background-color: blue;
+    z-index: 2;
+
+} */
+
