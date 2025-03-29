@@ -14,10 +14,11 @@ function changeText(){
             ele.innerText=texts[index];
             ele.classList.remove('fade-out');
             index++;
-            setTimeout(changeText,0);//动画间隔时间
-        },1000);//淡出时间
-    },2000);//淡入时间
+            setTimeout(changeText,1000);//动画间隔时间
+        },500);//淡出时间
+    },800);//淡入时间
 }
-
 changeText();
-    
+
+
+
