@@ -1,8 +1,9 @@
 const texts=["晴空一鹤排云上","便引诗情到云霄","八百里分麾下炙","五十弦翻塞外声"];
 const images=["background.png","dog.jpg","women.jpg"];
-let index1=1;
+let index1=0;
 let index2=0;
-function changeText(){
+let index3=0;
+function changeText1(){
     if(index1>=texts.length){
         index1=0;
     }
@@ -11,17 +12,40 @@ function changeText(){
     setTimeout(()=>{   
         ele.classList.remove('fade-in');
         ele.classList.add('fade-out');
-        
         setTimeout(()=>{
-            ele.innerText=texts[index1];
             ele.classList.remove('fade-out');
+            ele.innerHTML=texts[index1];
             index1++;
-            setTimeout(changeText,1000);//动画间隔时间
-        },500);//淡出时间
-    },800);//淡入时间
+            setTimeout(changeText1,500);
+        },1000);
+    },1000);
 }
-changeText();
+changeText1();
 
+function changeImage1(){
+    if(index3>=images.length){
+        index3=0;
+    }
+    let img1=document.getElementsByClassName('img1')[0].getElementsByTagName('img')[0];
+    // console.log(img1,typeof img1);
+    img1.classList.add('fade-in');
+    setTimeout(() => {
+        img1.classList.remove('fade-in');
+        img1.classList.add('fade-out');
+        setTimeout(() => {
+            img1.classList.remove('fade-out');
+            img1.src=images[index3];
+            index3++;
+            setTimeout(changeImage1, 500);
+        }, 1000);
+    },1000);
+}
+changeImage1();
+
+
+
+
+/*
 function changeImage(){
     if(index2>=images.length){
         index2=0;
@@ -50,6 +74,6 @@ function changeImage(){
     },800);//淡入时间
 }
 changeImage();
-
+*/
 
 
