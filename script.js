@@ -1,11 +1,11 @@
 const texts=["晴空一鹤排云上","便引诗情到云霄","八百里分麾下炙","五十弦翻塞外声"];
 const images=["background.png","dog.jpg","women.jpg"];
+let index=0;
 let index1=0;
 let index2=0;
-let index3=0;
 function changeText1(){
-    if(index1>=texts.length){
-        index1=0;
+    if(index>=texts.length){
+        index=0;
     }
     let ele=document.getElementsByClassName('two')[0];
     ele.classList.add('fade-in');
@@ -14,17 +14,17 @@ function changeText1(){
         ele.classList.add('fade-out');
         setTimeout(()=>{
             ele.classList.remove('fade-out');
-            ele.innerHTML=texts[index1];
-            index1++;
-            setTimeout(changeText1,500);
+            ele.innerHTML=texts[index];
+            index++;
+            setTimeout(changeText1,1000);
         },1000);
     },1000);
 }
 changeText1();
 
 function changeImage1(){
-    if(index3>=images.length){
-        index3=0;
+    if(index1>=images.length){
+        index1=0;
     }
     let img1=document.getElementsByClassName('img1')[0].getElementsByTagName('img')[0];
     // console.log(img1,typeof img1);
@@ -34,14 +34,33 @@ function changeImage1(){
         img1.classList.add('fade-out');
         setTimeout(() => {
             img1.classList.remove('fade-out');
-            img1.src=images[index3];
-            index3++;
-            setTimeout(changeImage1, 500);
+            img1.src=images[index1];
+            index1++;
+            setTimeout(changeImage1, 1000);          
         }, 1000);
     },1000);
 }
 changeImage1();
 
+function changeImage2(){
+    if(index2>=images.length){
+        index2=0;
+    }
+    let img2=document.getElementsByClassName('img2')[0].getElementsByTagName('img')[0];
+    // console.log(img1,typeof img1);
+    img2.classList.add('fade-in');
+    setTimeout(() => {
+        img2.classList.remove('fade-in');
+        img2.classList.add('fade-out');
+        setTimeout(() => {
+            img2.classList.remove('fade-out');
+            img2.src=images[index2];
+            index2++;
+            setTimeout(changeImage2, 1000);
+        }, 1000);
+    },1000);
+}
+changeImage2();
 
 
 
