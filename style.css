@@ -36,14 +36,6 @@ body{
     top:300vh;
     background-color: rgb(255, 253, 146);
 }
-.flex1{
-    position: fixed;
-    top:3%;
-    left: 80%;
-    width: 20%;
-    height: 10%;
-    /* background-color:white; */
-}
 /*首页底部渐隐效果*/
 .content.page1::after{
     content:"";
@@ -54,9 +46,30 @@ body{
     background:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,1));
 }
 .right1{
-    display: flex;
-    flex-direction: row;/*水平排列*/
-    justify-content: space-around;/*项目周围空间相等*/ 
+    position: fixed;
+    top:1%;
+    left: 77%;
+    width: 23%;
+    height: 7vh;
+    /* background-color:green; */
+}
+.icon1{
+    width: 5%;
+    height: 5vh;
+    right:16%;
+    position: fixed;
+}
+.icon2{
+    width: 5%;
+    height: 5vh;
+    position: fixed;
+    right:9%;
+}
+.icon3{
+    width: 5%;
+    height: 5vh;
+    position: fixed;
+    right:2%;
 }
 .left1{
     position: fixed;
